@@ -1,6 +1,6 @@
 # CLAUDE.md — Alpha-Omega System
 # ⚠️ READ THIS FIRST — BEFORE TOUCHING ANYTHING ⚠️
-# Last Updated: 2026-06-19
+# Last Updated: 2026-06-20
 
 > **System management:** Cursor AI only (ops/deploy/fixes). Claude: context and briefs only. Frozen stability stack: `CURSOR-AGENT-BRIEF.md` § DO NOT TOUCH.
 
@@ -448,18 +448,43 @@ This is the only way knowledge survives across sessions.
 | DTP guardrail fires | TP ordering inversion after scaling | Already handled in portfolio_manager.py |
 
 ## 16. RECENT SESSION CHANGES
-*Auto-updated: 2026-06-19 19:00 UTC*
+*Auto-updated: 2026-06-20 19:00 UTC*
+
+### `7434f8e` 2026-06-19 23:30 - Fix Jarvis partial position count and skip Supabase monitor checks in JSON mode.
+- `backend/jarvis_routes.py`
+- `core/live_monitor.py`
+- `deploy/_patch_clouding.py`
+
+### `5f65617` 2026-06-19 23:10 - Fix JSON-mode auth login and seed owner accounts on Clouding.
+- `backend/auth.py`
+- `backend/main.py`
+- `deploy/_patch_auth.py`
+- `deploy/_sync_owner_password.py`
+
+### `8b3e321` 2026-06-19 22:59 - Use HTTPS Clouding URL for frontend and API clients.
+- `CLAUDE.md`
+- `MASTER-KNOWLEDGE.md`
+- `core/keepalive.py`
+- `core/live_monitor.py`
+- `deploy/_setup_https.py`
+
+### `80a8923` 2026-06-19 22:58 - Migrate backend from Render to Clouding VPS with JSON storage.
+- `CLAUDE.md`
+- `MASTER-KNOWLEDGE.md`
+- `backend/auth.py`
+- `backend/main.py`
+- `core/calibrator.py`
+
+### `a9e5e31` 2026-06-19 22:00 - auto: session memory 2026-06-19 19:00
+- `CLAUDE.md`
+- `MASTER-KNOWLEDGE.md`
+- `calibration/session_log.json`
 
 ### `f9de74d` 2026-06-19 10:57 - hermes: migrate calibration_params to Supabase (dual-write + fallback)
 - `core/calibrator.py`
 - `migrations/004_calibration_params.sql`
 
 ### `e0f361f` 2026-06-18 22:00 - auto: session memory 2026-06-18 19:00
-- `CLAUDE.md`
-- `MASTER-KNOWLEDGE.md`
-- `calibration/session_log.json`
-
-### `5aaecd5` 2026-06-17 22:00 - auto: session memory 2026-06-17 19:00
 - `CLAUDE.md`
 - `MASTER-KNOWLEDGE.md`
 - `calibration/session_log.json`
