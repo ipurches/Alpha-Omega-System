@@ -1,6 +1,6 @@
 # CLAUDE.md — Alpha-Omega System
 # ⚠️ READ THIS FIRST — BEFORE TOUCHING ANYTHING ⚠️
-# Last Updated: 2026-06-20
+# Last Updated: 2026-06-21
 
 > **System management:** Cursor AI only (ops/deploy/fixes). Claude: context and briefs only. Frozen stability stack: `CURSOR-AGENT-BRIEF.md` § DO NOT TOUCH.
 
@@ -448,7 +448,12 @@ This is the only way knowledge survives across sessions.
 | DTP guardrail fires | TP ordering inversion after scaling | Already handled in portfolio_manager.py |
 
 ## 16. RECENT SESSION CHANGES
-*Auto-updated: 2026-06-20 19:00 UTC*
+*Auto-updated: 2026-06-21 19:00 UTC*
+
+### `7ef26d6` 2026-06-20 22:00 - auto: session memory 2026-06-20 19:00
+- `CLAUDE.md`
+- `MASTER-KNOWLEDGE.md`
+- `calibration/session_log.json`
 
 ### `7434f8e` 2026-06-19 23:30 - Fix Jarvis partial position count and skip Supabase monitor checks in JSON mode.
 - `backend/jarvis_routes.py`
@@ -476,15 +481,6 @@ This is the only way knowledge survives across sessions.
 - `core/calibrator.py`
 
 ### `a9e5e31` 2026-06-19 22:00 - auto: session memory 2026-06-19 19:00
-- `CLAUDE.md`
-- `MASTER-KNOWLEDGE.md`
-- `calibration/session_log.json`
-
-### `f9de74d` 2026-06-19 10:57 - hermes: migrate calibration_params to Supabase (dual-write + fallback)
-- `core/calibrator.py`
-- `migrations/004_calibration_params.sql`
-
-### `e0f361f` 2026-06-18 22:00 - auto: session memory 2026-06-18 19:00
 - `CLAUDE.md`
 - `MASTER-KNOWLEDGE.md`
 - `calibration/session_log.json`

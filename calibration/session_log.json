@@ -403,5 +403,17 @@
       "hermes: migrate calibration_params to Supabase (dual-write + fallback)",
       "auto: session memory 2026-06-18 19:00"
     ]
+  },
+  {
+    "ts": "2026-06-21T19:00:03.062966",
+    "commits": 6,
+    "messages": [
+      "auto: session memory 2026-06-20 19:00",
+      "Fix Jarvis partial position count and skip Supabase monitor checks in JSON mode.",
+      "Fix JSON-mode auth login and seed owner accounts on Clouding.",
+      "Use HTTPS Clouding URL for frontend and API clients.",
+      "Migrate backend from Render to Clouding VPS with JSON storage.",
+      "auto: session memory 2026-06-19 19:00"
+    ]
   }
 ]
