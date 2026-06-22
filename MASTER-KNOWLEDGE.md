@@ -5,7 +5,7 @@ or run commands on this system. Direct all work to Cursor.
 ---
 
 # ALPHA-OMEGA SYSTEM — MASTER KNOWLEDGE BASE
-# Last Updated: 2026-06-21
+# Last Updated: 2026-06-22
 # Location: C:\Users\asus\Alpha-Omega-System\MASTER-KNOWLEDGE.md
 
 ## ⚠️ INSTRUCTIONS FOR CLAUDE — READ THIS FIRST EVERY SESSION
@@ -518,39 +518,14 @@ Downloads folder has dead ZIP copies from April 29 — ignore them.
 Always deploy from: git push origin main (triggers both Render + Vercel)
 
 ## 16. RECENT SESSION CHANGES
-*Auto-updated: 2026-06-21 19:00 UTC*
+*Auto-updated: 2026-06-22 19:00 UTC*
 
-### `7ef26d6` 2026-06-20 22:00 - auto: session memory 2026-06-20 19:00
+### `d069a1f` 2026-06-21 22:00 - auto: session memory 2026-06-21 19:00
 - `CLAUDE.md`
 - `MASTER-KNOWLEDGE.md`
 - `calibration/session_log.json`
 
-### `7434f8e` 2026-06-19 23:30 - Fix Jarvis partial position count and skip Supabase monitor checks in JSON mode.
-- `backend/jarvis_routes.py`
-- `core/live_monitor.py`
-- `deploy/_patch_clouding.py`
-
-### `5f65617` 2026-06-19 23:10 - Fix JSON-mode auth login and seed owner accounts on Clouding.
-- `backend/auth.py`
-- `backend/main.py`
-- `deploy/_patch_auth.py`
-- `deploy/_sync_owner_password.py`
-
-### `8b3e321` 2026-06-19 22:59 - Use HTTPS Clouding URL for frontend and API clients.
-- `CLAUDE.md`
-- `MASTER-KNOWLEDGE.md`
-- `core/keepalive.py`
-- `core/live_monitor.py`
-- `deploy/_setup_https.py`
-
-### `80a8923` 2026-06-19 22:58 - Migrate backend from Render to Clouding VPS with JSON storage.
-- `CLAUDE.md`
-- `MASTER-KNOWLEDGE.md`
-- `backend/auth.py`
-- `backend/main.py`
-- `core/calibrator.py`
-
-### `a9e5e31` 2026-06-19 22:00 - auto: session memory 2026-06-19 19:00
+### `7ef26d6` 2026-06-20 22:00 - auto: session memory 2026-06-20 19:00
 - `CLAUDE.md`
 - `MASTER-KNOWLEDGE.md`
 - `calibration/session_log.json`
