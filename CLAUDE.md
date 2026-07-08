@@ -1,6 +1,6 @@
 # CLAUDE.md — Alpha-Omega System
 # ⚠️ READ THIS FIRST — BEFORE TOUCHING ANYTHING ⚠️
-# Last Updated: 2026-07-07
+# Last Updated: 2026-07-08
 
 > **System management:** Cursor AI only (ops/deploy/fixes). Claude: context and briefs only. Frozen stability stack: `CURSOR-AGENT-BRIEF.md` § DO NOT TOUCH.
 
@@ -448,14 +448,14 @@ This is the only way knowledge survives across sessions.
 | DTP guardrail fires | TP ordering inversion after scaling | Already handled in portfolio_manager.py |
 
 ## 16. RECENT SESSION CHANGES
-*Auto-updated: 2026-07-07 19:00 UTC*
+*Auto-updated: 2026-07-08 19:00 UTC*
 
-### `5d678e8` 2026-07-06 22:00 - auto: session memory 2026-07-06 19:00
+### `9211aba` 2026-07-07 22:00 - auto: session memory 2026-07-07 19:00
 - `CLAUDE.md`
 - `MASTER-KNOWLEDGE.md`
 - `calibration/session_log.json`
 
-### `95f245f` 2026-07-05 22:00 - auto: session memory 2026-07-05 19:00
+### `5d678e8` 2026-07-06 22:00 - auto: session memory 2026-07-06 19:00
 - `CLAUDE.md`
 - `MASTER-KNOWLEDGE.md`
 - `calibration/session_log.json`
