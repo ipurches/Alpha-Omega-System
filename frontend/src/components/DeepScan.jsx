@@ -1,6 +1,9 @@
 import React, { useState, useCallback, useEffect } from 'react';
 
-const API = () => window.__AO_API__ || import.meta.env.VITE_API_URL || 'https://alpha-omega-system.onrender.com';
+const API = () => {
+  const raw = window.__AO_API__ || import.meta.env.VITE_API_URL || 'https://alpha-omega-system.onrender.com';
+  return String(raw).includes('clouding.host') ? 'https://alpha-omega-system.onrender.com' : raw;
+};
 
 const SIGNAL_LABELS = {
   sma_flat:      { label: 'SMA 150 flat',     desc: '12+ months horizontal' },

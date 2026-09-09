@@ -3,7 +3,8 @@ import AuditTrail from "./AuditTrail";
 import SafetyControls from "./SafetyControls";
 import AiRadar from "./AiRadar";
 
-const API = import.meta.env.VITE_API_URL || "https://alpha-omega-system.onrender.com";
+const _raw = import.meta.env.VITE_API_URL || "https://alpha-omega-system.onrender.com";
+const API = String(_raw).includes("clouding.host") ? "https://alpha-omega-system.onrender.com" : _raw;
 const REFRESH = 30000;
 
 const STATUS_COLOR = { GREEN: "#1D9E75", YELLOW: "#BA7517", RED: "#E24B4A", running: "#1D9E75", stopped: "#E24B4A", unknown: "#888780" };

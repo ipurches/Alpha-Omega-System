@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
-const API = import.meta.env.VITE_API_URL || "https://alpha-omega-system.onrender.com";
+const _raw = import.meta.env.VITE_API_URL || "https://alpha-omega-system.onrender.com";
+const API = String(_raw).includes("clouding.host") ? "https://alpha-omega-system.onrender.com" : _raw;
 
 export default function AmaStatus({ compact = false }) {
   const [st, setSt] = useState(null);

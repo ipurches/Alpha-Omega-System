@@ -1,6 +1,13 @@
 /** Shared API client — retries + timeout for Render cold starts. */
-export const API_BASE =
-  import.meta.env.VITE_API_URL || 'https://alpha-omega-system.onrender.com';
+function resolveApiBase() {
+  const raw = import.meta.env.VITE_API_URL || 'https://alpha-omega-system.onrender.com';
+  // Dead Clouding hostname still set in some Vercel envs — never use it.
+  if (String(raw).includes('clouding.host')) {
+    return 'https://alpha-omega-system.onrender.com';
+  }
+  return raw;
+}
+export const API_BASE = resolveApiBase();
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
