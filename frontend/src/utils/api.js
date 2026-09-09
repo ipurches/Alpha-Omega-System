@@ -1,6 +1,6 @@
 /** Shared API client — retries + timeout for Render cold starts. */
 export const API_BASE =
-  import.meta.env.VITE_API_URL || 'https://289c4c10-4400-4814-b389-cf8b47133fc3.clouding.host';
+  import.meta.env.VITE_API_URL || 'https://alpha-omega-system.onrender.com';
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
@@ -44,12 +44,12 @@ export async function fetchJson(path, options = {}, cfg = {}) {
   return res.json();
 }
 
-/** Poll /health until Render is awake (max ~2 min). */
+/** Poll /health until backend responds (max ~2 min). Accepts degraded (JSON fallback). */
 export async function warmupBackend(onStatus) {
   for (let i = 0; i < 10; i++) {
     try {
       const data = await fetchJson('/health', {}, { timeoutMs: 25000, retries: 1 });
-      if (data?.status === 'online') return true;
+      if (data?.status === 'online' || data?.status === 'degraded') return true;
     } catch {
       onStatus?.(i >= 2 ? 'slow' : 'connecting');
     }
